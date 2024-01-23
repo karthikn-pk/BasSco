@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="team1">
+        <h1>Team 1 Players</h1>
+        <button id="addplayer-btn" >Add Player</button>
+
+    </div>
+    <div class="main">
+        <div class="container">
+            <h3 contenteditable="true">TEAM 1</h3>
+            <div class="Score1">
+                <h1 id="homeh1">0</h1>
+            </div>
+            <div class="score-btn">
+            <button class="btn" onclick="addOne()">+1</button>
+            <button class="btn" onclick="addTwo()">+2</button>
+            <button class="btn" onclick="addThree()">+3</button>
+            </div>
+            
+        </div>
+        <div class="container">
+            <h3 contenteditable="true">TEAM 2</h3>
+            <div class="Score2">
+                <h1 id="guesth1">0</h1>
+
+            </div>
+            <div class="score-btn">
+            <button class="btn" onclick="addOneg()">+1</button>
+            <button class="btn" onclick="addTwog()">+2</button>
+            <button class="btn" onclick="addThreeg()">+3</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="team2">
+        <h1>Team 2 Players</h1>
+        <button id="addplayer-btn">Add Player</button>
+        
+    </div>
+    
+    <div class="reset">
+        <button onclick="reset()" >New Game</button>
+    </div>
+    <div class="popup-box">
+        <h1>Add Player</h1>
+        <label >Player Name </label><input type="text" id="player-name-input"><br>
+        <button id="add-btn">Add</button>
+        <button id="cancel-btn">Cancel</button>
+    </div>
+    <div class="overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>
