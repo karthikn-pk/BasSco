@@ -1,0 +1,147 @@
+
+body{
+    background-color: #037bfc;
+    
+}
+.main{
+    
+    display: flex;
+    position: relative;
+    left:31%;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+    
+}
+.team1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid black;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+.team2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid black;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+
+
+.container{
+    color: rgb(247, 7, 7);
+    text-align: center;
+}
+
+
+.Score1{
+    border-radius: 5px;
+    width: 155px;
+    height: 150px;
+    background: #080001;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    margin-right: 15px;
+
+}
+.Score2{
+    border-radius: 5px;
+    width: 155px;
+    height: 150px;
+    background: #080001;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    margin-left: 15px;
+
+}
+
+h3{
+    font-size: 25px;
+    color: lightcyan;
+}
+#addplayer-btn{
+    background-color: #34eb4c;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    border: none;
+    border-radius: 3px;
+    
+}
+.score-btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    font-size: 15px;
+    
+}
+.btn{
+    border: 3px solid rgb(250, 3, 3);
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn:hover{
+    box-shadow: 2px 3px 3px inset;
+}
+.reset{
+    position: relative;
+    left: 44%;
+    margin-top: 30px;
+    
+   
+    
+}
+
+.reset button{
+    padding: 10px;
+    border: 5px groove black;
+    font-weight: bolder;
+    font-size: 25px;
+
+}
+.overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 1;
+    display: none;
+   
+}
+.popup-box{
+    background-color:#e3eaf1;
+    width: 30%;
+    padding: 40px;
+    border-radius: 15px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 2;
+    display: none;
+    
+}
+.popup-box input{
+    width: 66%;
+}
+#add-btn{
+    margin-top: 10px;
+    position: relative;
+    width: 48%;
+}
+#cancel-btn{
+    margin-top: 10px;
+    position: relative;
+    width: 50%;
+}
