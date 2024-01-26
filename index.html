@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="team1">
+    <div id="team1">
         <h1>Team 1 Players</h1>
-        <button id="addplayer-btn" >Add Player</button>
+        <button id="addplayer-btn" onclick="popup('Team1')">Add Player</button>
 
     </div>
     <div class="main">
@@ -39,19 +39,25 @@
             
         </div>
     </div>
-    <div class="team2">
+    <div id="team2">
         <h1>Team 2 Players</h1>
-        <button id="addplayer-btn">Add Player</button>
+        <button id="addplayer2-btn" onclick="popup('Team2')">Add Player</button>
         
     </div>
     
     <div class="reset">
         <button onclick="reset()" >New Game</button>
     </div>
-    <div class="popup-box">
+    <div id="popupTeam1" class="popup-box">
         <h1>Add Player</h1>
         <label >Player Name </label><input type="text" id="player-name-input"><br>
-        <button id="add-btn">Add</button>
+        <button id="add-btn" onclick="addPlayerToTeam('team1')">Add</button>
+        <button id="cancel-btn">Cancel</button>
+    </div>
+    <div id="popupTeam2" class="popup-box">
+        <h1>Add Player</h1>
+        <label >Player Name </label><input type="text" id="player-name-input"><br>
+        <button id="add-btn" onclick="addPlayerToTeam('team2')">Add</button>
         <button id="cancel-btn">Cancel</button>
     </div>
     <div class="overlay"></div>
