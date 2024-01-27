@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="team1">
+    <div id="Team1">
         <h1>Team 1 Players</h1>
-        <button id="addplayer-btn" onclick="popup('Team1')">Add Player</button>
+        <button id="addplayer-btn" class="button" onclick="popup('Team1')">Add Player</button>
 
     </div>
     <div class="main">
@@ -39,9 +39,9 @@
             
         </div>
     </div>
-    <div id="team2">
+    <div id="Team2">
         <h1>Team 2 Players</h1>
-        <button id="addplayer2-btn" onclick="popup('Team2')">Add Player</button>
+        <button id="addplayer2-btn" class="button" onclick="popup('Team2')">Add Player</button>
         
     </div>
     
@@ -50,15 +50,15 @@
     </div>
     <div id="popupTeam1" class="popup-box">
         <h1>Add Player</h1>
-        <label >Player Name </label><input type="text" id="player-name-input"><br>
-        <button id="add-btn" onclick="addPlayerToTeam('team1')">Add</button>
-        <button id="cancel-btn">Cancel</button>
+        <label >Player Name </label><input type="text" id="player-name-input-Team1"><br>
+        <button id="add-btn" onclick="addPlayerToTeam('Team1')">Add</button>
+        <button id="cancel-btn"  onclick="cancelTask('Team1')">Cancel</button>
     </div>
     <div id="popupTeam2" class="popup-box">
         <h1>Add Player</h1>
-        <label >Player Name </label><input type="text" id="player-name-input"><br>
-        <button id="add-btn" onclick="addPlayerToTeam('team2')">Add</button>
-        <button id="cancel-btn">Cancel</button>
+        <label >Player Name </label><input type="text" id="player-name-input-Team2"><br>
+        <button id="add-btn2" onclick="addPlayerToTeam('Team2')">Add</button>
+        <button id="cancel-btn" onclick="cancelTask('Team2')">Cancel</button>
     </div>
     <div class="overlay"></div>
     <script src="script.js"></script>

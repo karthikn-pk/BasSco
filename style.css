@@ -14,7 +14,7 @@ body{
     width: 400px;
     
 }
-#team1{
+#Team1{
     position: absolute;
     top: 0;
     left: 0;
@@ -23,7 +23,7 @@ body{
     height: 100%;
     text-align: center;
 }
-#team2{
+#Team2{
     position: absolute;
     top: 0;
     right: 0;
@@ -67,7 +67,7 @@ h3{
     font-size: 25px;
     color: lightcyan;
 }
-#addplayer{
+.button{
     background-color: #34eb4c;
     color: white;
     padding: 10px;

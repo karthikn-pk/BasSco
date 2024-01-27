@@ -49,21 +49,26 @@ function popup(player){
 
 
 let cancelEl=document.getElementById("cancel-btn")
-let playerName=document.getElementById("player-name-input")
+// let playerName=document.getElementById("player-name-input")
 // let one=document.querySelector(".team1")
 // let two=document.querySelector("team2")
 
 
-
-
-
 function addPlayerToTeam(team){
+    let playerNameInput = document.getElementById("player-name-input-"+team);
+    let playerNameValue = playerNameInput.value;
     let newEl=document.createElement('p')
-    newEl.innerHTML=`<h3>${playerName.value}</h3>`
+    newEl.innerHTML=`<h3>${playerNameValue}</h3>`
     document.getElementById(team).append(newEl);
-    popupEl.style.display="none";
+    document.getElementById('popup'+team).style.display="none";
     overlayEl.style.display="none";
+    playerNameInput.value = "";
 
 }
 
 
+function cancelTask(team) {
+    document.getElementById('popup'+team).style.display="none";
+    overlayEl.style.display="none";
+    
+}
